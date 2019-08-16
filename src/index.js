@@ -1,8 +1,9 @@
-var http = require('http');
+const http = require('http');
+const port = process.env.port || 8080;
 
 http.createServer(function (req, res) {
   res.write('Hello wim!');
   res.end();
-}).listen(8080);
+}).listen(port);
 
-console.log('server listening on port 8080');
+console.log(`server listening on port ${port}`);
