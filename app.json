@@ -1,0 +1,10 @@
+{
+  "name": "pdfmerge",
+  "env": {},
+  "addons": [],
+  "buildpacks": [{
+        "url": "heroku/nodejs"
+    }, {
+        "url": "https://github.com/ddollar/heroku-buildpack-apt"
+    }]
+}

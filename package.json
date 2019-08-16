@@ -1,0 +1,28 @@
+{
+  "name": "pdfmerge",
+  "version": "1.0.0",
+  "description": "PDF Merge is a simple REST API to merge multiple PDF files into one.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev-start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines" : { "node" : "12" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sitebase/pdfmerge.git"
+  },
+  "keywords": [
+    "pdf",
+    "merge",
+    "rest",
+    "api"
+  ],
+  "author": "Wim Mostmans (http://www.sitebase.be/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Sitebase/pdfmerge/issues"
+  },
+  "homepage": "https://github.com/Sitebase/pdfmerge#readme"
+}
