@@ -7,7 +7,8 @@
     "start": "mkdir -p /tmp/pdfmerge/ && node src/index.js",
     "dev-start": "mkdir -p /tmp/pdfmerge/ && nodemon src/index.js",
     "logs": "heroku logs -t -a sbpdfmerge",
-    "test": "curl -d 'files=http://localhost:8080/samples/sample1.pdf,http://localhost:8080/samples/sample2.pdf' -X POST http://localhost:8080"
+    "test": "curl -d 'files=http://localhost:8080/samples/sample1.pdf,http://localhost:8080/samples/sample2.pdf' -X POST http://localhost:8080",
+    "test-prod": "curl -d 'files=https://sbpdfmerge.herokuapp.com/samples/sample1.pdf,https://sbpdfmerge.herokuapp.com/samples/sample2.pdf' -X POST https://sbpdfmerge.herokuapp.com"
   },
   "engines": {
     "node": "12"

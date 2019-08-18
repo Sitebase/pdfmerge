@@ -13,6 +13,7 @@ const app = express()
 app.use(express.urlencoded());
 app.use('/samples', express.static('samples'))
 app.use('/files', express.static('/tmp/pdfmerge'))
+console.log('ENV', process.env);
 
 app.get('/', (req, res) => res.json({
     name: info.name,
