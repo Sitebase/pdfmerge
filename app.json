@@ -1,6 +1,11 @@
 {
   "name": "pdfmerge",
-  "env": {},
+  "env": {
+    "BASE_URL": {
+        "description": "Base URL from which the API can be called",
+        "required": true
+    }
+  },
   "addons": [],
   "buildpacks": [{
         "url": "heroku/nodejs"

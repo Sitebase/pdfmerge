@@ -5,8 +5,7 @@ const fs = require('fs');
 const hummus = require('hummus');
 
 function getFileURL(filename) {
-    const app = process.env.HEROKU_APP_NAME;
-    const baseURL = app ? `https://${app}.herokuapp.com` : `http://localhost:${process.env.PORT}`;
+    const baseURL = process.env.BASE_URL
     return `${baseURL}/files/${filename}`;
 }
 
